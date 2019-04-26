@@ -9,5 +9,4 @@ RUN gauge install dotnet && \
 
 ENV PATH=$HOME/.gauge:$PATH
 
-ENTRYPOINT ["gauge"]
-CMD ["--help"]
+CMD ["gauge","--help"]
