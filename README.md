@@ -1,8 +1,8 @@
 # gauge-dotnet-docker
 
-Docker image that provides gauge cli with dotnet core plugin
+Docker wrapped version of the gauge cli with dotnet core plugin, that can be used to run gauge tests in build pipelines etc. 
 
-## Usage 
+## Example Usage 
 
 ### Dockerfile
 ```
@@ -27,6 +27,3 @@ gauge run specs
 
 #### Windows
 `docker run --rm -v ${PWD}:/workspace -w /workspace mikemcfarland/gauge-dotnet gauge run specs`
-
-### Selenium 
-This image does not contain chromium, but it will work with selenium grid. 
