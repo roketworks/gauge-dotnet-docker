@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: docker
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  assignees:
+  - roketworks
+  ignore:
+  - dependency-name: dotnet/core/sdk
+    versions:
+    - 3.1.405
+    - 3.1.406
+    - 3.1.407
